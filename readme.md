@@ -59,13 +59,17 @@ In your own words…
 ==================
 
 **Question**: What are the methods of the Activity Lifecycle?
-<br />**Answer**: onResume
+<br />**Answer**: onCreate, onStart, onResume, onPause, onStop, onDestroy
 
 **Question**: What order are the methods called?
-<br />**Answer**: 
+<br />**Answer**: See above
 
 **Question**: What is a bundle?
-<br />**Answer**: 
+<br />**Answer**: An object used to store different values in order to send them to different parts of the app.
 
 **Question**: How do you get the Shared Preferences of an app?
-<br />**Answer**:
+<br />**Answer**: SharedPref sharedPref = getSharedPreferences();
+SharedPreferences.Editor editor = sharedPref.edit();
+editor.put();
+editor.commit();
+String string = sharedPref.getString("Key","Nothing found");
